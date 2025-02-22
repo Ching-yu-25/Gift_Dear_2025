@@ -14,12 +14,12 @@ function checkPsw(psw) {
 }
 
 $(document).ready(function () {
-  var scene = document.getElementById('scene');
-  console.log(document.getElementById('scene'));
-  var parallaxInstance = new Parallax(scene);
 
   setTimeout(function () {
     $(".black").addClass("open");
+    var scene = document.getElementById('scene');
+    console.log(document.getElementById('scene'));
+    var parallaxInstance = new Parallax(scene);
   }, 3000)
 
   // 裝置方向偵測
