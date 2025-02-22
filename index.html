@@ -16,8 +16,10 @@
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.19.0/js/md5.min.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
   <!-- Build script -->
+
   <script type="module" crossorigin src="./assets/index-CpCV6ayk.js"></script>
   <link rel="stylesheet" crossorigin href="./assets/index-BIAS015K.css">
+  <script src="./js/index.js"></script>
 </head>
 
 <body>
@@ -25,41 +27,7 @@
 
 
 <script>
-  $(document).ready(function () {
-    var scene = document.getElementById('scene');
-    console.log(document.getElementById('scene'));
-    var parallaxInstance = new Parallax(scene);
 
-    setTimeout(function () {
-      $(".black").addClass("open");
-    }, 3000)
-
-    // 裝置方向偵測
-    $(window).on("deviceorientation resize", function (event) {
-      console.log(window.matchMedia("(orientation: portrait)"))
-      //直式
-      if (window.matchMedia("(orientation: portrait)").matches) {
-        $(".overlay-landscape-wrapper").addClass("active");
-      }
-      //橫式
-      if (window.matchMedia("(orientation: landscape)").matches) {
-        $(".overlay-landscape-wrapper").removeClass("active");
-
-      }
-    });
-
-
-    $("#letter").click(function () {
-      console.log("letter click");
-      $("#letter_wrapper").fadeIn();
-      $("#letter_content").addClass("active");
-    })
-
-    $("#letter_wrapper").click(function () {
-      $("#letter_wrapper").fadeOut();
-      $("#letter_content").removeClass("active");
-    })
-  })
 </script>
 
 </html>
