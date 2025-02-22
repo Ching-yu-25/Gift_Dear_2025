@@ -37,13 +37,13 @@ $(document).ready(function () {
   });
 
 
-  $("#letter").on("click", function () {
+  $(document).on("click", "#letter", function () {
     console.log("letter click");
     $("#letter_wrapper").fadeIn();
     $("#letter_content").addClass("active");
   })
 
-  $("#letter_wrapper").on("click", function () {
+  $(document).on("click", "#letter_wrapper", function () {
     $("#letter_wrapper").fadeOut();
     $("#letter_content").removeClass("active");
   })
